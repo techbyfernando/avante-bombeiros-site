@@ -162,6 +162,18 @@ img{display:block;max-width:100%}
 
 /* A largura considera o glifo real da palavra mais longa do hero. */
 .hero h1{width:100%;max-width:100%;font-size:clamp(4.2rem,min(8.6vw,12vh),8.2rem);line-height:.92;letter-spacing:-.055em;overflow:visible;overflow-wrap:normal;word-break:keep-all}
+.icon{display:inline-block;width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}
+.icon-arrow{width:1.15em;height:1.15em}
+.icon-spark{width:1.8em;height:1.8em;stroke-width:1.35}
+.button-icon .icon{width:18px;height:18px}
+.header-contact .icon{width:17px;height:17px}
+.text-link .icon{width:20px;height:20px}
+.service-arrow .icon{width:22px;height:22px}
+.hero-footer .icon{width:16px;height:16px}
+.field-card-caption>.icon{width:22px;height:22px}
+.contact-direct .icon{width:18px;height:18px}
+.floating-contact .icon{width:20px;height:20px}
+.red-spark{display:inline-flex;align-items:center;color:var(--red-bright);font-size:inherit;line-height:1}
 @media(max-width:1100px){.hero h1{font-size:clamp(3.8rem,min(8.8vw,11.5vh),6.5rem)}}
 @media(max-width:800px){.hero h1{font-size:clamp(3.2rem,min(10.25vw,10.5vh),5.3rem);line-height:.95;letter-spacing:-.045em}}
 @media(max-width:600px){.hero h1{font-size:clamp(2.35rem,13.5vw,4.6rem);line-height:.98;letter-spacing:-.035em}}

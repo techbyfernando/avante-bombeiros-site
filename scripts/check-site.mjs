@@ -72,5 +72,6 @@ if (video.includes(Buffer.from('soun'))) throw new Error('Vídeo hero ainda cont
 for (const file of files) {
   const html = await readFile(join(root, file), 'utf8');
   if (!html.includes('./theme.js') || !html.includes('./theme.css') || !html.includes('class="theme-toggle"')) throw new Error(`Tema não integrado em ${file}`);
+  if (/[↗↘↓↑←✳]/u.test(html)) throw new Error(`Ícone Unicode/emoji encontrado em ${file}; use SVG inline para manter consistência móvel`);
 }
 console.log(`${files.length} páginas HTML, ${links} referências locais válidas, vídeo sem trilha de áudio, tema claro/escuro integrado, breakpoints verificados, ${partnerNames} parceiros com logos em imagem no carrossel.`);
