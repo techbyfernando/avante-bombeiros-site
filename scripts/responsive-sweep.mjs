@@ -60,6 +60,10 @@ for (const [width, height] of homeViewports) {
     };
     const rect = selector => document.querySelector(selector)?.getBoundingClientRect();
     const title = rect('.hero h1');
+    const titleElement = document.querySelector('.hero h1');
+    const firstLineRange = document.createRange();
+    if (titleElement?.firstChild) firstLineRange.selectNodeContents(titleElement.firstChild);
+    const firstLine = titleElement?.firstChild ? firstLineRange.getBoundingClientRect() : null;
     const description = rect('.hero-description');
     const hero = rect('.hero');
     const directory = rect('.service-directory');
@@ -78,6 +82,8 @@ for (const [width, height] of homeViewports) {
     return {
       scrollOverflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
       title: title && { left: title.left, right: title.right, top: title.top, bottom: title.bottom, width: title.width },
+      titleInk: firstLine && { left: firstLine.left, right: firstLine.right, width: firstLine.width },
+      titleContentOverflow: titleElement ? titleElement.scrollWidth - titleElement.clientWidth : 0,
       description: description && { top: description.top, bottom: description.bottom },
       hero: hero && { top: hero.top, bottom: hero.bottom, height: hero.height },
       directory: directory && { left: directory.left, right: directory.right, width: directory.width },
@@ -90,6 +96,8 @@ for (const [width, height] of homeViewports) {
   addDefect(scope, errors.length, `erros JavaScript: ${errors.join(' | ')}`);
   addDefect(scope, metrics.scrollOverflow > 1, `overflow horizontal de ${metrics.scrollOverflow}px (${metrics.overflowers.join(', ')})`);
   addDefect(scope, !metrics.title || metrics.title.left < -1 || metrics.title.right > width + 1, 'título do hero fora do viewport');
+  addDefect(scope, !metrics.titleInk || metrics.titleInk.left < 12 || metrics.titleInk.right > width - 12, 'glifos da primeira linha do hero sem margem segura');
+  addDefect(scope, metrics.titleContentOverflow > 1, `conteúdo tipográfico do hero excede a caixa em ${metrics.titleContentOverflow}px`);
   addDefect(scope, metrics.title && metrics.description && metrics.title.bottom > metrics.description.top + 1, 'título do hero sobrepõe a descrição');
   addDefect(scope, metrics.hero && metrics.description && metrics.description.bottom > metrics.hero.bottom - 55, 'conteúdo do hero invade o rodapé');
   addDefect(scope, metrics.darkFaqContrast < 4.5, `rótulo de FAQ sem contraste no tema escuro (${metrics.darkFaqContrast.toFixed(2)}:1)`);

@@ -3,7 +3,6 @@ qa/
 partner-assets/
 research/
 .vercel/
-.vercel-source/
 *.log
 .DS_Store
 Thumbs.db

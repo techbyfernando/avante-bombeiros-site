@@ -39,6 +39,10 @@ for (const viewport of viewports) {
   await page.waitForTimeout(1100);
   const top = await page.evaluate(() => {
     const title = document.querySelector('.hero h1').getBoundingClientRect();
+    const titleElement = document.querySelector('.hero h1');
+    const firstLineRange = document.createRange();
+    firstLineRange.selectNodeContents(titleElement.firstChild);
+    const titleInk = firstLineRange.getBoundingClientRect();
     const description = document.querySelector('.hero-description').getBoundingClientRect();
     const video = document.querySelector('.hero-video');
     const floating = getComputedStyle(document.querySelector('.floating-contact'));
@@ -47,6 +51,9 @@ for (const viewport of viewports) {
       titleBottom: Math.round(title.bottom),
       descriptionTop: Math.round(description.top),
       titleWidth: Math.round(title.width),
+      titleInkLeft: Math.round(titleInk.left),
+      titleInkRight: Math.round(titleInk.right),
+      titleContentOverflow: titleElement.scrollWidth - titleElement.clientWidth,
       titleFontSize: getComputedStyle(document.querySelector('.hero h1')).fontSize,
       sideNoteCount: document.querySelectorAll('.hero-side-note').length,
       floatingVisibleAtTop: floating.visibility !== 'hidden' || Number(floating.opacity) > 0.01,
@@ -105,6 +112,8 @@ const defects = [
   ...report.homepage.flatMap(item => [
     ...(item.overflow > 1 ? [`${item.viewport}: overflow ${item.overflow}`] : []),
     ...(item.titleBottom > item.descriptionTop ? [`${item.viewport}: título do hero invade a descrição`] : []),
+    ...(item.titleInkLeft < 12 || item.titleInkRight > Number(item.viewport.match(/\d+/)?.[0] ?? 0) - 12 ? [`${item.viewport}: glifos do hero sem margem segura`] : []),
+    ...(item.titleContentOverflow > 1 ? [`${item.viewport}: conteúdo tipográfico excede a caixa`] : []),
     ...(item.sideNoteCount ? [`${item.viewport}: nota vertical ainda presente`] : []),
     ...(item.floatingVisibleAtTop ? [`${item.viewport}: CTA flutuante visível no hero`] : []),
     ...(!item.floatingVisibleAfterHero ? [`${item.viewport}: CTA flutuante não aparece após o hero`] : []),
