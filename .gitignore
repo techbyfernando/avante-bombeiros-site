@@ -1,0 +1,8 @@
+dist/
+qa/
+partner-assets/
+research/
+.vercel/
+*.log
+.DS_Store
+Thumbs.db

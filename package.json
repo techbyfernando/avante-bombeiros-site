@@ -1,0 +1,16 @@
+{
+  "name": "avante-landing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "build": "node scripts/build-production.mjs",
+    "generate": "node scripts/generate-pages.mjs && node scripts/generate-partner-assets.mjs && node scripts/build-partners.mjs",
+    "check": "node --check main.js && node --check server.mjs && node --check scripts/build-production.mjs && node --check scripts/generate-pages.mjs && node --check scripts/generate-partner-assets.mjs && node --check scripts/build-partners.mjs && node --check scripts/strip-audio.mjs && node --check scripts/critical-qa.mjs && node --check scripts/responsive-sweep.mjs && node --check scripts/performance-audit.mjs && node scripts/check-site.mjs",
+    "qa:visual": "node scripts/visual-qa.mjs",
+    "qa:critical": "node scripts/critical-qa.mjs",
+    "qa:responsive": "node scripts/responsive-sweep.mjs",
+    "audit:performance": "node scripts/performance-audit.mjs"
+  }
+}
