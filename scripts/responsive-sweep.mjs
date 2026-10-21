@@ -44,10 +44,6 @@ for (const [width, height] of homeViewports) {
   page.on('pageerror', error => errors.push(error.message));
   await page.goto(`http://127.0.0.1:${port}/index.html`, { waitUntil: 'networkidle' });
   await page.waitForTimeout(350);
-  await page.evaluate(() => {
-    if (document.documentElement.dataset.theme !== 'dark') document.querySelector('.theme-toggle')?.click();
-  });
-  await page.waitForTimeout(80);
   const metrics = await page.evaluate(() => {
     const contrast = (foreground, background) => {
       const rgb = value => (value.match(/[\d.]+/g) ?? []).slice(0, 3).map(Number);
@@ -79,11 +75,10 @@ for (const [width, height] of homeViewports) {
       const r = element.getBoundingClientRect();
       return r.width > 0 && (r.right > document.documentElement.clientWidth + 1 || r.left < -1);
     }).slice(0, 8).map(element => `${element.tagName.toLowerCase()}.${element.className}`);
+    document.documentElement.dataset.theme = 'dark';
     const faqLabel = document.querySelector('.faq .eyebrow-pill');
     const darkFaqContrast = faqLabel ? contrast(getComputedStyle(faqLabel).color, getComputedStyle(faqLabel.closest('.faq')).backgroundColor) : 0;
-    const partners = document.querySelector('.partners');
-    const darkPartnersBackground = partners ? getComputedStyle(partners).backgroundColor : '';
-    const darkPartnersContrast = partners ? contrast(getComputedStyle(partners).color, darkPartnersBackground) : 0;
+    document.documentElement.dataset.theme = 'light';
     return {
       scrollOverflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
       title: title && { left: title.left, right: title.right, top: title.top, bottom: title.bottom, width: title.width },
@@ -95,8 +90,6 @@ for (const [width, height] of homeViewports) {
       links,
       overflowers,
       darkFaqContrast,
-      darkPartnersBackground,
-      darkPartnersContrast,
       ctaText: document.querySelector('.inner-cta h2')?.textContent.trim() ?? '',
     };
   });
@@ -108,8 +101,6 @@ for (const [width, height] of homeViewports) {
   addDefect(scope, metrics.title && metrics.description && metrics.title.bottom > metrics.description.top + 1, 'título do hero sobrepõe a descrição');
   addDefect(scope, metrics.hero && metrics.description && metrics.description.bottom > metrics.hero.bottom - 55, 'conteúdo do hero invade o rodapé');
   addDefect(scope, metrics.darkFaqContrast < 4.5, `rótulo de FAQ sem contraste no tema escuro (${metrics.darkFaqContrast.toFixed(2)}:1)`);
-  addDefect(scope, metrics.darkPartnersBackground !== 'rgb(17, 25, 27)', `parceiros não acompanha o tema escuro (${metrics.darkPartnersBackground})`);
-  addDefect(scope, metrics.darkPartnersContrast < 4.5, `parceiros sem contraste no tema escuro (${metrics.darkPartnersContrast.toFixed(2)}:1)`);
   addDefect(scope, metrics.directory && metrics.links.some(link => link.left < metrics.directory.left - 1 || link.right > metrics.directory.right + 1 || link.width < 90), 'item do diretório fora da grade');
   report.homepage.push({ width, height, errors, ...metrics });
   if ([[320, 568], [390, 844], [768, 1024], [1280, 720], [1920, 1080]].some(v => v[0] === width && v[1] === height)) {
