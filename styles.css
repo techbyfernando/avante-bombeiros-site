@@ -132,7 +132,7 @@ img{display:block;max-width:100%}
 .partners-all summary{min-height:48px;color:#11191b;display:flex;align-items:center;justify-content:space-between}
 .partners-all summary::after{float:none}
 .partners-all summary:focus-visible{outline-color:#c9151d}
-.gsap-line{overflow:hidden}
+.gsap-line{overflow:visible;padding-block:.08em}
 .gsap-word{will-change:transform,opacity}
 @media(max-width:900px){.intro-grid{grid-template-columns:1fr;align-items:start;gap:34px}.intro-aside{padding-bottom:0}.intro-aside p{max-width:62ch}.partner-mark{width:180px;height:92px}}
 @media(max-width:600px){.intro-link{min-height:48px}.service-directory-heading{margin-top:38px}.service-directory a{grid-template-columns:minmax(0,1fr) 44px;min-height:68px;padding:14px 0;font-size:16px}.partner-mark{width:150px;height:78px}.partners-rows{gap:18px}.partners-heading{margin-bottom:38px}.partners-layout{padding-block:76px 64px}}
@@ -161,10 +161,10 @@ img{display:block;max-width:100%}
 @media(max-width:600px){.hero-kicker,.hero-footer,.section-eyebrow,.menu-overlay-bottom{font-size:11px}.hero-kicker{letter-spacing:.05em}.footer-bottom{font-size:11px}}
 
 /* A largura considera o glifo real da palavra mais longa do hero. */
-.hero h1{width:100%;max-width:100%;font-size:clamp(4.2rem,min(8.6vw,12vh),8.2rem);line-height:.86;letter-spacing:-.055em;overflow-wrap:normal;word-break:keep-all}
+.hero h1{width:100%;max-width:100%;font-size:clamp(4.2rem,min(8.6vw,12vh),8.2rem);line-height:.92;letter-spacing:-.055em;overflow:visible;overflow-wrap:normal;word-break:keep-all}
 @media(max-width:1100px){.hero h1{font-size:clamp(3.8rem,min(8.8vw,11.5vh),6.5rem)}}
-@media(max-width:800px){.hero h1{font-size:clamp(3.2rem,min(10.25vw,10.5vh),5.3rem);line-height:.88;letter-spacing:-.045em}}
-@media(max-width:600px){.hero h1{font-size:clamp(2.35rem,13.5vw,4.6rem);line-height:.9;letter-spacing:-.035em}}
+@media(max-width:800px){.hero h1{font-size:clamp(3.2rem,min(10.25vw,10.5vh),5.3rem);line-height:.95;letter-spacing:-.045em}}
+@media(max-width:600px){.hero h1{font-size:clamp(2.35rem,13.5vw,4.6rem);line-height:.98;letter-spacing:-.035em}}
 @media(max-height:700px) and (max-width:800px){.hero h1{font-size:clamp(2.35rem,min(10vw,9vh),4.4rem)}}
 @media(max-width:360px){.hero h1{font-size:clamp(2.35rem,13.5vw,3.1rem)}}
 

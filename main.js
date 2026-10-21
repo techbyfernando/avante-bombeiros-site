@@ -110,7 +110,6 @@ if (!reducedMotion && splitTextReady) {
       type: 'lines,words',
       linesClass: 'gsap-line',
       wordsClass: 'gsap-word',
-      mask: 'lines',
       autoSplit: true,
       aria: 'auto',
       onSplit(instance) {
@@ -136,8 +135,8 @@ if (!reducedMotion && scrollTriggerReady) {
     { opacity: 0.15, filter: 'blur(8px)' },
     { opacity: 1, filter: 'blur(0px)', duration: 0.72, ease: 'expo.out', scrollTrigger: { trigger: '.partners-rows', start: 'top 82%', once: true }, clearProps: 'filter,opacity' });
   window.gsap.fromTo('[data-gsap-directory] a',
-    { x: -18, opacity: 0 },
-    { x: 0, opacity: 1, duration: 0.48, stagger: 0.055, ease: 'expo.out', scrollTrigger: { trigger: '[data-gsap-directory]', start: 'top 84%', once: true }, clearProps: 'transform,opacity' });
+    { y: 14, opacity: 0 },
+    { y: 0, opacity: 1, duration: 0.48, stagger: 0.055, ease: 'expo.out', scrollTrigger: { trigger: '[data-gsap-directory]', start: 'top 84%', once: true }, clearProps: 'transform,opacity' });
 }
 const revealElements = document.querySelectorAll('[data-reveal]');
 const revealSiblingCounts = new WeakMap();

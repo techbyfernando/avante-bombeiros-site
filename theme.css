@@ -26,6 +26,12 @@ body{background:var(--page);color:var(--text)}
 .inner-coverage-grid{background:var(--border);border-color:var(--border)}.inner-coverage-grid article{background:var(--surface)}.inner-coverage-grid li{border-color:var(--border);color:var(--text-soft)}
 .testimonial{background:var(--surface-alt);color:var(--text)}.testimonial-inner{max-width:930px}.testimonial .micro-label{color:var(--red)}.testimonial blockquote{font-size:clamp(1.8rem,3.7vw,3.7rem);line-height:1.3;letter-spacing:-.035em;font-weight:700;margin:30px 0 32px}.testimonial-inner>p{display:grid;gap:5px;margin:0;font-size:14px}.testimonial-inner>p span{font-size:12px;color:var(--text-soft)}
 .inner-related{background:#11191b;color:#fff}
+:root[data-theme="dark"] .partners{background:#11191b;color:#f4f7f6;border-color:#303c3f}
+:root[data-theme="dark"] .partners-kicker{color:#ff777a}
+:root[data-theme="dark"] .partners-heading>p,:root[data-theme="dark"] .partners-all li,:root[data-theme="dark"] .partners-source{color:#bdc8c7!important}
+:root[data-theme="dark"] .partners-all{border-color:#394648}
+:root[data-theme="dark"] .partners-all summary{color:#f4f7f6}
+:root[data-theme="dark"] .partner-mark{background:transparent}
 .skip-link{background:var(--surface);color:var(--text)}
 .section-eyebrow{color:var(--text)}
 .section-eyebrow .section-rule{background:var(--border)}
