@@ -11,6 +11,11 @@
     "qa:visual": "node scripts/visual-qa.mjs",
     "qa:critical": "node scripts/critical-qa.mjs",
     "qa:responsive": "node scripts/responsive-sweep.mjs",
-    "audit:performance": "node scripts/performance-audit.mjs"
+    "audit:performance": "node scripts/performance-audit.mjs",
+    "qa:install-browser": "playwright install chromium"
+  },
+  "devDependencies": {
+    "playwright": "^1.62.1",
+    "sharp": "^0.35.5"
   }
 }

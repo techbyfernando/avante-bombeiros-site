@@ -2,7 +2,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { createReadStream } from 'node:fs';
 import { createServer } from 'node:http';
 import { join } from 'node:path';
-import { chromium } from 'file:///C:/Users/FernandodePaulaRodri/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs';
+import { chromium } from 'playwright';
 
 const root = join(import.meta.dirname, '..');
 const output = join(root, 'qa');
@@ -18,7 +18,10 @@ const server = createServer((request, response) => {
 });
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const { port } = server.address();
-const browser = await chromium.launch({ headless: true, executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe' });
+const browser = await chromium.launch({
+  headless: true,
+  ...(process.env.PLAYWRIGHT_CHROME_PATH ? { executablePath: process.env.PLAYWRIGHT_CHROME_PATH } : {}),
+});
 const runs = [];
 
 for (let index = 0; index < 10; index += 1) {

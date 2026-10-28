@@ -40,3 +40,16 @@ body{background:#f3f4f2}.inner-hero,.inner-title-hero{position:relative;overflow
 .inner-cta .micro-label{color:#ff777a}
 .blog-grid,.blog-card,.blog-card-copy{min-width:0}
 .blog-card--featured{width:100%;max-width:100%;overflow:hidden}
+
+/* Titulos de paginas internas e textos auxiliares com leitura mais clara. */
+.inner-hero h1,.inner-title-hero h1,.inner-intro h2,.inner-check h2,.inner-related h2,.inner-detail-head h2,.inner-cta h2{letter-spacing:-.025em;line-height:1.05}
+.inner-detail-grid h3,.inner-coverage-grid h3,.inner-related-grid strong,.blog-card h2{letter-spacing:-.015em;line-height:1.2}
+.inner-breadcrumb,.inner-kicker,.inner-related-grid span,.blog-card .micro-label{font-size:13px;letter-spacing:.035em;line-height:1.5}
+.inner-detail-grid article>span,.inner-coverage-grid li{font-size:16px}
+.inner-detail-grid p,.blog-card p{font-size:17px;line-height:1.65}
+.inner-related-grid a{min-height:230px}
+@media(max-width:600px){
+  .inner-hero h1,.inner-title-hero h1{font-size:clamp(3rem,12vw,5rem)}
+  .inner-hero-content>p:not(.inner-breadcrumb),.inner-title-hero .shell>p:last-child{font-size:18px;line-height:1.55}
+  .inner-intro h2,.inner-check h2,.inner-related h2,.inner-detail-head h2{font-size:clamp(2.6rem,10vw,4.4rem)}
+}

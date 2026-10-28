@@ -1,6 +1,6 @@
 import { mkdir, readFile } from 'node:fs/promises';
 import { basename, extname, join } from 'node:path';
-import sharp from 'file:///C:/Users/FernandodePaulaRodri/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp/dist/index.mjs';
+import sharp from 'sharp';
 
 const root = join(import.meta.dirname, '..');
 const inventory = await readFile(join(root, 'CONTENT_INVENTORY.md'), 'utf8');

@@ -180,5 +180,43 @@ img{display:block;max-width:100%}
 @media(max-height:700px) and (max-width:800px){.hero h1{font-size:clamp(2.35rem,min(10vw,9vh),4.4rem)}}
 @media(max-width:360px){.hero h1{font-size:clamp(2.35rem,13.5vw,3.1rem)}}
 
+/* Tipografia: leitura confortavel e espaco natural entre letras em todas as larguras. */
+body{font-family:"Segoe UI",Arial,sans-serif}
+.brand img{width:240px}
+.footer-top img{width:260px}
+@media(max-width:800px){.brand img{width:172px}.footer-top img{width:230px}}
+@media(max-width:360px){.brand img{width:150px}}
+.hero h1,.display-title,.manifesto h2,.contact-copy h2,.partners h2,.menu-overlay-nav a{letter-spacing:-.025em;line-height:1.05}
+.training-copy .display-title{letter-spacing:-.02em;line-height:1.09;text-wrap:balance}
+.hero h1{line-height:1.02;letter-spacing:-.025em}
+.service-tab,.service-panel-copy h3,.field-card-caption h3,.pillar-grid h3,.faq-list summary,.contact-direct a,.footer-top p,.service-directory-heading h3{letter-spacing:-.015em}
+.hero-kicker,.hero-side-note,.hero-footer,.section-eyebrow,.micro-label,.photo-label,.footer-label,.partners-kicker,.partners-source,.service-num,.pillar-num,.training-list span{letter-spacing:.035em}
+.desktop-nav a,.header-contact,.button,.text-link,.intro-link{font-size:15px}
+.hero-kicker,.hero-side-note,.hero-footer,.section-eyebrow,.micro-label,.photo-label,.footer-label,.partners-kicker,.partners-source,.service-num,.pillar-num,.training-list span,.form-row label{font-size:13px}
+.pillar-grid p,.footer-grid a,.footer-grid>div>span:not(.footer-label),.partners-all li{font-size:16px;line-height:1.55}
+.service-panel-copy p,.field-bottom p,.faq-list details p,.form-note{font-size:17px;line-height:1.65}
+.faq-list summary{font-size:19px;line-height:1.4}
+.hero-description,.training-copy>p,.faq-grid>div:first-child>p,.contact-copy>p{font-size:18px;line-height:1.6}
+.service-directory a{font-size:16px}
+.footer-bottom{font-size:13px;line-height:1.5}
+@media(max-width:600px){
+  .hero-kicker,.hero-footer,.section-eyebrow,.menu-overlay-bottom{font-size:12px}
+  .hero-description,.training-copy>p,.faq-grid>div:first-child>p,.contact-copy>p{font-size:17px;line-height:1.6}
+  .faq-list summary{font-size:18px}
+  .button,.text-link,.intro-link{font-size:15px}
+  .training-list li,.partners-all li{font-size:16px}
+  .footer-bottom{font-size:13px}
+  .hero h1{line-height:1.03;letter-spacing:-.02em}
+}
+@media(max-width:320px){
+  .contact-grid{grid-template-columns:minmax(0,1fr)}
+  .contact-grid>*{min-width:0}
+  .contact-copy h2{font-size:clamp(2.6rem,12vw,3.6rem)}
+  .contact-form,.form-row,.form-row input,.form-row select,.form-row textarea{min-width:0}
+  .contact-form{grid-template-columns:minmax(0,1fr)}
+  .form-row{grid-template-columns:minmax(0,1fr)}
+  .form-submit{max-width:100%;white-space:normal;text-align:left;gap:8px;padding-left:14px}
+}
+
 
 

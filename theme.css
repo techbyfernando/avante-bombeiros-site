@@ -3,7 +3,7 @@
 body{background:var(--page);color:var(--text)}
 .site-header,.site-header.is-scrolled{background:color-mix(in srgb,var(--page) 96%,transparent);color:var(--text);border-bottom-color:color-mix(in srgb,var(--text) 10%,transparent)}
 .site-header.is-scrolled{box-shadow:0 8px 30px rgba(0,0,0,.12)}
-:root[data-theme="dark"] .brand img{content:url('./images/avante-logo-dark.png')}
+:root[data-theme="dark"] .brand img{content:url('./images/avante-logo-dark-oficial-v1.png')}
 :root[data-theme="dark"] .header-contact{background:#c9151d}
 :root[data-theme="dark"] .button-red,:root[data-theme="dark"] .floating-contact{background:#c9151d}
 :root[data-theme="dark"] .micro-label,:root[data-theme="dark"] .pillar-num,:root[data-theme="dark"] .training-list span,:root[data-theme="dark"] .inner-detail-grid article>span,:root[data-theme="dark"] .inner-kicker,:root[data-theme="dark"] .menu-overlay-nav span,:root[data-theme="dark"] .blog-article a:not(.text-link){color:#ff777a}
@@ -34,3 +34,8 @@ body{background:var(--page);color:var(--text)}
 .section-eyebrow-light .section-rule{background:var(--line-dark)}
 .section-eyebrow-light .eyebrow-pill{border-color:var(--line-dark)}
 @media(max-width:800px){.theme-toggle{width:44px;height:44px}.header-actions{gap:10px}}
+
+.testimonial blockquote{letter-spacing:-.02em}
+.testimonial-inner>p{font-size:16px;line-height:1.55}
+.testimonial-inner>p span{font-size:14px}
+.site-header,.site-header.is-scrolled{background:var(--page)}

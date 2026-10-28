@@ -32,7 +32,7 @@ const coverageTerms = {
   'brigada-de-incendio-nr23.html': ['Unidade móvel', 'Atribuições da brigada', 'renovação do AVCB'],
   'plano-de-abandono.html': ['Rotas de evacuação', 'Ambientes atendidos', 'Hospitais'],
   'auto-de-vistoria-avcb-clcb.html': ['Via Fácil Bombeiros', 'Sistemas avaliados', 'ART/RRT'],
-  'bombeiro-civil-terceirizacao.html': ['Atuação operacional', 'Soluções complementares publicadas', 'controle de fumaça'],
+  'bombeiro-civil-terceirizacao.html': ['Atuação operacional', 'Soluções complementares', 'controle de fumaça'],
   'eventos.html': ['Recepcionistas bilíngues', 'limpeza e conservação', 'rh@avantebombeiros.com'],
   'treinamentos.html': ['NR-35', 'NR-33', 'baterias de íons de lítio'],
   'orientacao-socioeducativa.html': ['Conselho Tutelar', 'Cidade Protetora', '61.426/2022'],

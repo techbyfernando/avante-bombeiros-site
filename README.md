@@ -26,6 +26,9 @@ O comando cria `dist/` apenas com os arquivos entregues ao navegador. Para regen
 npm run check
 ```
 
+Para executar as rotinas de QA visual e regeneração de imagens em uma nova máquina, instale as dependências de desenvolvimento com `npm ci`. Depois, instale o navegador usado pelo Playwright com `npm run qa:install-browser`. Os scripts usam os pacotes locais, sem depender do caminho de instalação de outro usuário.
+Se o Chrome já estiver instalado, defina `PLAYWRIGHT_CHROME_PATH` com o caminho completo do executável para rodar o QA sem instalar outro navegador.
+
 O verificador confere rotas, referências locais, ausência de links ao domínio antigo, presença de 51 logos de parceiros em imagem e ausência de trilha de áudio no MP4. A varredura responsiva cobre 28 tamanhos da página inicial e 56 combinações das páginas internas com `npm run qa:responsive`. O formulário valida os campos no navegador e abre o WhatsApp oficial com a mensagem preenchida. Nenhum dado é armazenado por este projeto.
 
 ## Conteúdo

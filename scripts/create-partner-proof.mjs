@@ -1,6 +1,6 @@
 import { mkdir, readdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import sharp from 'file:///C:/Users/FernandodePaulaRodri/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp/dist/index.mjs';
+import sharp from 'sharp';
 
 const directory = new URL('../images/partners/generated/', import.meta.url);
 const files = (await readdir(directory)).filter(file => file.endsWith('.png')).sort();
