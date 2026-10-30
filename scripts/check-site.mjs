@@ -39,7 +39,7 @@ const coverageTerms = {
 };
 for (const [file, terms] of Object.entries(coverageTerms)) {
   const html = await readFile(join(root, file), 'utf8');
-  if ([...html.matchAll(/class="inner-coverage-grid"/g)].length !== 1 || [...html.matchAll(/<article>/g)].length < 6) throw new Error(`Cobertura editorial incompleta em ${file}`);
+  if ([...html.matchAll(/class="inner-coverage-grid(?:\s|\")/g)].length !== 1 || [...html.matchAll(/<article>/g)].length < 6) throw new Error(`Cobertura editorial incompleta em ${file}`);
   for (const term of terms) if (!html.toLocaleLowerCase('pt-BR').includes(term.toLocaleLowerCase('pt-BR'))) throw new Error(`Conteúdo oficial ausente em ${file}: ${term}`);
 }
 const partnerList = home.match(/<details class="partners-all">([\s\S]*?)<\/details>/)?.[1] || '';
