@@ -29,8 +29,8 @@ const blog = await readFile(join(root, 'blog.html'), 'utf8');
 if (!blog.includes('blog-card--featured')) throw new Error('Artigo principal do blog sem destaque editorial');
 if ([...blog.matchAll(/<article class="blog-card/g)].length !== 7) throw new Error('O blog precisa manter as 7 publicações oficiais nativas');
 const coverageTerms = {
-  'brigada-de-incendio-nr23.html': ['Unidade móvel', 'Atribuições da brigada', 'renovação do AVCB'],
-  'plano-de-abandono.html': ['Rotas de evacuação', 'Ambientes atendidos', 'Hospitais'],
+  'brigada-de-incendio-nr23.html': ['Unidade móvel', 'Atribuições da brigada', 'dimensionamento'],
+  'plano-de-abandono.html': ['Plano de abandono: evacuação segura', 'Um plano para o seu espaço', 'Preparação e atualização'],
   'auto-de-vistoria-avcb-clcb.html': ['Via Fácil Bombeiros', 'Sistemas avaliados', 'ART/RRT'],
   'bombeiro-civil-terceirizacao.html': ['Atuação operacional', 'Soluções complementares', 'controle de fumaça'],
   'eventos.html': ['Recepcionistas bilíngues', 'limpeza e conservação', 'rh@avantebombeiros.com'],

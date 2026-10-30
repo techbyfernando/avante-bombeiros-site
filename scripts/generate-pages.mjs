@@ -13,6 +13,7 @@ const services = [
       ['O que a brigada pratica', 'Trabalhamos reconhecimento de riscos, uso inicial de equipamentos de combate a incêndio, comunicação de emergência, abandono de área e primeiros socorros.'],
       ['Para quem', 'Atendemos empresas, centros comerciais, shopping centers, indústrias e condomínios. O escopo é dimensionado conforme o risco e a ocupação de cada local.'],
     ], bullets: ['Inspeção preventiva e identificação de riscos', 'Resposta a princípios de incêndio', 'Apoio à evacuação e primeiros socorros', 'Exercícios práticos e simulações'],
+    scopeNote: 'Para conhecer a composição recomendada da brigada e o dimensionamento para seu local, fale com nossa equipe.',
     source: 'https://www.avantebombeiros.com/brigada-de-incendio-nr23.html',
   },
   {
@@ -23,6 +24,7 @@ const services = [
       ['Do documento ao exercício', 'O treinamento de evacuação inclui exercícios práticos e orientações para que cada pessoa compreenda seu papel em cenários de risco.'],
       ['Integração com a prevenção', 'O plano deve dialogar com sinalização, saídas de emergência, brigada e rotinas de atualização. A definição concreta depende das características da edificação e da operação.'],
     ], bullets: ['Leitura das rotas e saídas', 'Pontos de encontro e comunicação', 'Papéis da brigada e dos ocupantes', 'Simulados de abandono'],
+    scopeNote: 'Para conhecer os documentos, mapas, procedimentos e treinamentos indicados para sua operação, fale com nossa equipe.',
     source: 'https://www.avantebombeiros.com/plano-de-abandono.html',
   },
   {
@@ -33,6 +35,7 @@ const services = [
       ['Plano de adequação', 'Identificamos as exigências aplicáveis e organizamos relatório de não conformidades, orçamento e acompanhamento das correções físicas e documentais.'],
       ['Documentos e vistoria', 'Apoiamos a preparação de laudos, projetos, ART/RRT quando aplicáveis, protocolo e acompanhamento da vistoria. A relação de documentos varia conforme ocupação, área e exigências vigentes.'],
     ], bullets: ['Visita técnica e diagnóstico', 'Plano de adequação', 'Sistemas e documentos', 'Acompanhamento do processo'],
+    scopeNote: 'A periodicidade dos ensaios depende da configuração do sistema, das normas aplicáveis, do fabricante e das exigências locais. Fale com nossa equipe para avaliar sua instalação.',
     source: 'https://www.avantebombeiros.com/auto-de-vistoria-avcb-clcb.html',
   },
   {
@@ -63,6 +66,7 @@ const services = [
       ['Riscos específicos', 'Também constam treinamentos para cozinhas industriais, produtos químicos perigosos, equipamentos de proteção individual e combate a incêndio envolvendo baterias de íons de lítio.'],
       ['Treinamento in company', 'Adaptamos o conteúdo à realidade da contratante e utilizamos exercícios práticos e a unidade móvel em parte das capacitações.'],
     ], bullets: ['Brigada de incêndio e NR-23', 'Primeiros socorros, DEA e APH', 'Abandono e evacuação', 'NR-35, NR-33 e riscos específicos'],
+    scopeNote: 'Para conhecer os conteúdos, recursos e formatos disponíveis para sua equipe, fale com nossa equipe.',
     source: 'https://www.avantebombeiros.com/treinamentos.html',
   },
   {
@@ -92,25 +96,27 @@ const coverageBySlug = {
       'Prestar primeiros socorros, incluindo RCP, controle de hemorragias e imobilização até a chegada do atendimento especializado.',
       'Orientar colaboradores e realizar simulações periódicas de emergência.',
     ]],
-    ['Referências técnicas', [
-      'A brigada contribui para a renovação do AVCB e deve observar as Instruções Técnicas aplicáveis do Corpo de Bombeiros de São Paulo.',
-      'O dimensionamento e as exigências variam conforme ocupação, risco, porte e regras aplicáveis à edificação.',
+    ['Composição e dimensionamento', [
+      'A equipe pode incluir líderes ou chefes de brigada e brigadistas operacionais, com funções definidas por setor.',
+      'O dimensionamento considera área, ocupação, quantidade de pessoas e riscos específicos do local.',
+      'A Avante realiza levantamento técnico para propor a composição adequada, observando a NR-23, as instruções locais do Corpo de Bombeiros e as demais regras aplicáveis.',
     ]],
   ],
   'plano-de-abandono.html': [
-    ['Elementos do plano', [
-      'Rotas de evacuação, pontos de encontro, comunicação de emergência e contagem de pessoas.',
-      'Definição clara dos papéis de colaboradores, visitantes e equipe de resposta.',
-      'Treinamento prático com exercícios realistas para reduzir pânico e orientar uma saída organizada.',
+    ['PAE: resposta organizada', [
+      'O Plano de Atendimento a Emergências reúne cenários de risco, responsáveis, fluxos de acionamento, comunicação e recursos para cada local.',
+      'Organiza procedimentos para ocorrências como incêndio, emergência médica, vazamentos e resgates, além da integração com os serviços externos.',
+      'Simulados, registros pós-evento e revisão dos procedimentos apoiam a preparação e a melhoria contínua.',
     ]],
-    ['Por que preparar a operação', [
-      'Proteção de funcionários e visitantes e preparação para agir com calma em cenários críticos.',
-      'Apoio à conformidade, redução de perdas operacionais e fortalecimento da responsabilidade da organização.',
-      'Revisões e treinamentos regulares para manter procedimentos compreendidos e utilizáveis.',
+    ['Plano de abandono: evacuação segura', [
+      'Define como funcionários, prestadores, visitantes e demais ocupantes deixam a área diante de risco iminente.',
+      'Organiza rotas, saídas, pontos de encontro, comunicação, contagem de pessoas e responsabilidades da brigada.',
+      'Prioriza a preservação da vida, a orientação clara e a saída ordenada, com treinamento e simulados.',
     ]],
-    ['Ambientes atendidos', [
-      'Escritórios, instituições de ensino, hospitais, hotéis e centros de saúde.',
-      'Shoppings, centros comerciais, espaços de eventos, indústrias, fábricas e edifícios residenciais de grande porte.',
+    ['Preparação e atualização', [
+      'Os procedimentos consideram áreas internas, estacionamentos e demais dependências incluídas no escopo contratado.',
+      'Mapas de risco, organogramas, contatos, checklists e procedimentos operacionais podem integrar a entrega conforme a necessidade.',
+      'Treinamentos, simulados e revisões ajudam a manter o plano adequado às mudanças da operação.',
     ]],
   ],
   'auto-de-vistoria-avcb-clcb.html': [
@@ -128,7 +134,9 @@ const coverageBySlug = {
     ['Documentos e ensaios', [
       'Documentos do imóvel e da empresa, planta e memorial de segurança quando exigidos.',
       'Projetos, ART/RRT, relatório fotográfico, laudos e certificados dos sistemas aplicáveis.',
-      'Ensaios de vazão e pressão, testes de bombas, autonomia da iluminação, estanqueidade de gás e inspeções de conformidade.',
+      'Ensaio do dreno de fim de linha dos sprinklers para observar vazão e pressão e verificar válvulas, registros, obstruções e vazamentos.',
+      'A frequência deve considerar a configuração da rede, as normas aplicáveis, o manual do fabricante e as exigências locais. Uma referência inicial pode prever inspeção visual mensal, teste semestral e revisão técnica anual, sujeita à validação para cada instalação.',
+      'Outros ensaios podem incluir testes de bombas, autonomia da iluminação, estanqueidade de gás e inspeções de conformidade.',
     ]],
   ],
   'bombeiro-civil-terceirizacao.html': [
@@ -167,10 +175,15 @@ const coverageBySlug = {
     ]],
   ],
   'treinamentos.html': [
-    ['Emergência e atendimento', [
-      'Evacuação de emergência e plano de abandono.',
-      'Brigadista de combate a incêndio, primeiros socorros, DEA e atendimento pré-hospitalar (APH).',
-      'Uso de equipamentos, comunicação, trabalho em equipe e tomada de decisão em incidentes.',
+    ['DEA e atendimento pré-hospitalar (APH)', [
+      'O DEA analisa o ritmo cardíaco e fornece instruções; quando indicado, orienta a aplicação de choque. Seu uso integra o atendimento à parada cardiorrespiratória junto à RCP e ao acionamento do serviço de emergência.',
+      'O APH reúne os cuidados iniciais no local para preservar a vida, reduzir riscos imediatos e preparar a transferência da vítima ao serviço de saúde, conforme treinamento e recursos disponíveis.',
+      'As capacitações podem abordar atendimentos individuais ou com múltiplas vítimas e a integração com equipes externas.',
+    ]],
+    ['Abordagem humanizada em resgates', [
+      'A atuação prioriza a vida e a segurança, com avaliação dos riscos para a vítima e para quem presta ajuda.',
+      'Comunicação calma e clara, respeito à dignidade e à privacidade e consentimento sempre que possível orientam o atendimento inicial.',
+      'Os procedimentos seguem o treinamento recebido e consideram a transferência ao atendimento especializado.',
     ]],
     ['Resgate e riscos específicos', [
       'Resgate e trabalho em altura conforme NR-35.',
@@ -217,8 +230,8 @@ const shell = (title, description, main, image = 'treinamento-enhanced.webp') =>
 for (const service of services) {
   const related = services.filter(item => item !== service).slice(0, 3);
   const coverage = coverageBySlug[service.slug] || [];
-  const coverageSection = `<section class="inner-coverage section-pad"><div class="shell"><div class="inner-detail-head"><span class="micro-label">CONTEÚDO COMPLETO</span><h2>Informações da solução, organizadas para consulta.</h2></div><div class="inner-coverage-grid">${coverage.map(([title, items]) => `<article><h3>${esc(title)}</h3><ul>${items.map(item => `<li>${esc(item)}</li>`).join('')}</ul></article>`).join('')}</div></div></section>`;
-  const main = `<section class="inner-hero"><img class="inner-hero-image" src="./images/${service.image}" alt="" aria-hidden="true"><div class="inner-hero-overlay" aria-hidden="true"></div><div class="shell inner-hero-content"><p class="inner-breadcrumb"><a href="./index.html">Início</a> / Soluções</p><p class="inner-kicker">${esc(service.eyebrow)}</p><h1>${esc(service.title)}</h1><p>${esc(service.lead)}</p><a class="button button-red" href="./index.html?servico=${encodeURIComponent(service.intent)}#contato">Solicitar proposta <span class="button-icon" aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></div></section><section class="inner-intro section-pad"><div class="shell inner-intro-grid"><div><span class="micro-label">AVANTE BOMBEIROS E SERVIÇOS</span><h2>Prevenção com propósito.<br><em>Prontidão em cada etapa.</em></h2></div><p>${esc(service.lead)}</p></div></section><section class="inner-detail section-pad"><div class="shell"><div class="inner-detail-head"><span class="micro-label">COMO ATUAMOS</span><h2>Uma solução para a realidade da sua operação.</h2></div><div class="inner-detail-grid">${service.sections.map((s, i) => `<article><span>0${i + 1}</span><h3>${esc(s[0])}</h3><p>${esc(s[1])}</p></article>`).join('')}</div></div></section>${coverageSection}<section class="inner-check section-pad"><div class="shell inner-check-grid"><div><span class="micro-label">ESCOPO</span><h2>O que podemos preparar juntos.</h2><p>Converse com nossa equipe para definir necessidades, riscos e formato da atuação.</p></div><ul>${service.bullets.map(b => `<li>${esc(b)}</li>`).join('')}</ul></div></section><section class="inner-related section-pad"><div class="shell"><span class="micro-label">EXPLORE MAIS</span><h2>Outras soluções Avante</h2><div class="inner-related-grid">${related.map(s => `<a href="./${s.slug}"><span>${esc(s.eyebrow)}</span><strong>${esc(s.title)}</strong><b aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></b></a>`).join('')}</div></div></section><section class="inner-cta"><div class="shell"><span class="micro-label">PRÓXIMO PASSO</span><h2>Vamos planejar a segurança do seu espaço?</h2><a class="button button-white" href="./index.html?servico=${encodeURIComponent(service.intent)}#contato">Falar com a Avante <span class="button-icon" aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></div></section>`;
+  const coverageSection = `<section class="inner-coverage section-pad"><div class="shell"><div class="inner-detail-head"><span class="micro-label">ATIVIDADES DO PORTFÓLIO</span><h2>Um resumo do que podemos oferecer.</h2></div><div class="inner-coverage-grid">${coverage.map(([title, items]) => `<article><h3>${esc(title)}</h3><ul>${items.map(item => `<li>${esc(item)}</li>`).join('')}</ul></article>`).join('')}</div></div></section>`;
+  const main = `<section class="inner-hero"><img class="inner-hero-image" src="./images/${service.image}" alt="" aria-hidden="true"><div class="inner-hero-overlay" aria-hidden="true"></div><div class="shell inner-hero-content"><p class="inner-breadcrumb"><a href="./index.html">Início</a> / Soluções</p><p class="inner-kicker">${esc(service.eyebrow)}</p><h1>${esc(service.title)}</h1><p>${esc(service.lead)}</p><a class="button button-red" href="./index.html?servico=${encodeURIComponent(service.intent)}#contato">Solicitar proposta <span class="button-icon" aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></div></section><section class="inner-intro section-pad"><div class="shell inner-intro-grid"><div><span class="micro-label">AVANTE BOMBEIROS E SERVIÇOS</span><h2>Prevenção com propósito.<br><em>Prontidão em cada etapa.</em></h2></div><p>${esc(service.lead)}</p></div></section><section class="inner-detail section-pad"><div class="shell"><div class="inner-detail-head"><span class="micro-label">COMO ATUAMOS</span><h2>Uma solução para a realidade da sua operação.</h2></div><div class="inner-detail-grid">${service.sections.map((s, i) => `<article><span>0${i + 1}</span><h3>${esc(s[0])}</h3><p>${esc(s[1])}</p></article>`).join('')}</div></div></section>${coverageSection}<section class="inner-check section-pad"><div class="shell inner-check-grid"><div><span class="micro-label">ESCOPO</span><h2>O que podemos preparar juntos.</h2><p>${esc(service.scopeNote || 'Para conhecer os detalhes e o escopo adequado à sua operação, entre em contato com nossa equipe.')}</p></div><ul>${service.bullets.map(b => `<li>${esc(b)}</li>`).join('')}</ul></div></section><section class="inner-related section-pad"><div class="shell"><span class="micro-label">EXPLORE MAIS</span><h2>Outras soluções Avante</h2><div class="inner-related-grid">${related.map(s => `<a href="./${s.slug}"><span>${esc(s.eyebrow)}</span><strong>${esc(s.title)}</strong><b aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></b></a>`).join('')}</div></div></section><section class="inner-cta"><div class="shell"><span class="micro-label">PRÓXIMO PASSO</span><h2>Vamos planejar a segurança do seu espaço?</h2><a class="button button-white" href="./index.html?servico=${encodeURIComponent(service.intent)}#contato">Falar com a Avante <span class="button-icon" aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></div></section>`;
   const html = shell(service.title, service.lead, main, service.image);
   for (const slug of [service.slug, ...(service.aliases || [])]) await writeFile(join(root, slug), html);
 }
