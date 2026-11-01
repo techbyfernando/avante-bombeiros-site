@@ -22,6 +22,8 @@ body{background:#f3f4f2}.inner-hero,.inner-title-hero{position:relative;overflow
 
 /* Conteúdo oficial consolidado nas páginas de solução. */
 .inner-coverage{background:#f7f7f3}
+.inner-detail .inner-detail-head{display:block;max-width:850px;margin-bottom:42px}
+.inner-detail .inner-detail-head h2{font-size:clamp(2.65rem,4vw,4.25rem);line-height:1.08;letter-spacing:-.025em;margin:0;text-wrap:balance}
 .inner-coverage .inner-detail-head{display:block;max-width:850px;margin-bottom:42px}
 .inner-coverage .inner-detail-head h2{font-size:clamp(2.65rem,4vw,4.25rem);line-height:1.08;letter-spacing:-.025em;margin:0;text-wrap:balance}
 .inner-coverage-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#cbd1cf;border:1px solid #cbd1cf}

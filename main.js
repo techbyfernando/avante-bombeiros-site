@@ -161,6 +161,14 @@ const header = document.querySelector('.site-header');
 const progress = document.querySelector('.scroll-progress');
 const hero = document.querySelector('.hero');
 if (!hero) document.body.classList.add('inner-page');
+document.querySelectorAll('.footer-bottom a[href="#topo"]').forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    try { history.replaceState(null, '', '#topo'); } catch {}
+    header.querySelector('.brand')?.focus({ preventScroll: true });
+    window.scrollTo({ top: 0, behavior: reducedMotion ? 'auto' : 'smooth' });
+  });
+});
 let ticking = false;
 function updateScroll() {
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;

@@ -7,9 +7,9 @@ const esc = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt
 const services = [
   {
     slug: 'brigada-de-incendio-nr23.html', aliases: ['brigada-incendio-nr23-treinamento-certificado.html'], title: 'Brigada de Incêndio e NR-23', eyebrow: 'TREINAMENTO E PREVENÇÃO', image: 'brigada-hero-enhanced.webp', imageAlt: 'Treinamento prático de combate a incêndio realizado pela Avante', intent: 'Brigada de incêndio / NR-23',
-    lead: 'Formação e preparação de brigadas para prevenir ocorrências, orientar pessoas e agir nos primeiros momentos de uma emergência.',
+    lead: 'Formação e dimensionamento de brigadas para prevenir, detectar e responder inicialmente a incêndios, com foco na proteção de pessoas e patrimônio até a chegada do Corpo de Bombeiros.',
     sections: [
-      ['Preparação conectada à realidade', 'Nossos treinamentos in company são adaptados ao ambiente de cada operação. As aulas combinam orientação e exercícios práticos, inclusive com o apoio da unidade móvel de treinamento.'],
+      ['Preparação conectada à realidade', 'Os treinamentos são adaptados ao ambiente de cada operação. As aulas combinam orientação e exercícios práticos, inclusive com o apoio da unidade móvel de treinamento.'],
       ['O que a brigada pratica', 'Trabalhamos reconhecimento de riscos, uso inicial de equipamentos de combate a incêndio, comunicação de emergência, abandono de área e primeiros socorros.'],
       ['Para quem', 'Atendemos empresas, centros comerciais, shopping centers, indústrias e condomínios. O escopo é dimensionado conforme o risco e a ocupação de cada local.'],
     ], bullets: ['Inspeção preventiva e identificação de riscos', 'Resposta a princípios de incêndio', 'Apoio à evacuação e primeiros socorros', 'Exercícios práticos e simulações'],
@@ -17,8 +17,8 @@ const services = [
     source: 'https://www.avantebombeiros.com/brigada-de-incendio-nr23.html',
   },
   {
-    slug: 'plano-de-abandono.html', aliases: ['plano-abandono-seguranca-emergencia-eficacia.html'], title: 'Plano de Abandono e Evacuação', eyebrow: 'ROTAS CLARAS, EQUIPES PREPARADAS', image: 'treinamento-enhanced.webp', imageAlt: 'Equipe da Avante junto à unidade móvel de treinamento', intent: 'Plano de abandono e evacuação',
-    lead: 'Procedimentos, orientação e treinamento para que ocupantes saibam como sair de uma área de forma organizada em uma emergência.',
+    slug: 'plano-de-abandono.html', aliases: ['plano-abandono-seguranca-emergencia-eficacia.html'], title: 'PAE e Plano de Abandono', eyebrow: 'PREPARAÇÃO E EVACUAÇÃO', image: 'treinamento-enhanced.webp', imageAlt: 'Equipe da Avante junto à unidade móvel de treinamento', intent: 'PAE e plano de abandono',
+    lead: 'Planejamento de resposta e evacuação para que equipes e ocupantes saibam como agir de forma organizada em emergências.',
     sections: [
       ['Um plano para o seu espaço', 'Estruturamos procedimentos para orientar funcionários e visitantes, com rotas de fuga, pontos de encontro, comunicação e contagem de pessoas.'],
       ['Do documento ao exercício', 'O treinamento de evacuação inclui exercícios práticos e orientações para que cada pessoa compreenda seu papel em cenários de risco.'],
@@ -43,7 +43,7 @@ const services = [
     lead: 'Bombeiros civis integrados à rotina de prevenção, inspeção e resposta inicial a emergências de sua operação.',
     sections: [
       ['Prevenção todos os dias', 'Nossa atuação inclui análise de riscos, inspeção de equipamentos e verificação de sinalização, saídas e iluminação de emergência.'],
-      ['Prontidão para agir', 'Os profissionais também apoiam planos de evacuação, combate inicial a incêndio, primeiros socorros e resgate, conforme o cenário e o escopo contratado.'],
+      ['Prontidão para agir', 'Os profissionais apoiam planos de evacuação, combate inicial a incêndio, atendimento pré-hospitalar (APH) e resgate, conforme o cenário e o escopo contratado.'],
       ['Uma equipe para cada ambiente', 'Atuamos em shopping centers, indústrias, eventos e hipermercados. A composição da equipe e os postos seguem as necessidades da operação e as exigências aplicáveis.'],
     ], bullets: ['Análise de riscos e inspeções', 'Checagem de equipamentos e rotas', 'Apoio ao plano de abandono', 'Primeiros socorros e resposta inicial'],
     source: 'https://www.avantebombeiros.com/bombeiro-civil-terceirizacao.html',
@@ -52,7 +52,7 @@ const services = [
     slug: 'eventos.html', aliases: ['avante-servicos-para-eventos.html'], title: 'Bombeiros e Equipes para Eventos', eyebrow: 'EVENTOS COM PREPARO', image: 'eventos-hero-enhanced.webp', imageAlt: 'Equipe em exercício prático de combate a incêndio', intent: 'Cobertura para eventos',
     lead: 'Cobertura com bombeiros civis para prevenção, primeiros socorros e resposta a intercorrências em eventos e espaços de entretenimento.',
     sections: [
-      ['Proteção do público e da operação', 'Nossos bombeiros civis atuam em primeiros socorros, prevenção e combate inicial a incêndios, além de inspeções e testes de equipamentos.'],
+      ['Proteção do público e da operação', 'Nossos bombeiros civis atuam em primeiros socorros e APH inicial com abordagem humanizada, além de prevenção, combate inicial a incêndios e inspeções de equipamentos.'],
       ['Apoio ao evento completo', 'Também oferecemos recepção, promotores, segurança, limpeza e carregadores como serviços de apoio a eventos. Consulte nossa equipe para compor o escopo adequado.'],
       ['Planejamento sob medida', 'Cada evento pede leitura de público, espaço, acessos e riscos. A proposta deve definir equipe, comunicação e recursos antes da abertura ao público.'],
     ], bullets: ['Bombeiros civis para eventos', 'Primeiros socorros', 'Prevenção e resposta inicial', 'Equipe de apoio conforme necessidade'],
@@ -64,7 +64,7 @@ const services = [
     sections: [
       ['Nossos treinamentos', 'Oferecemos cursos de brigada de incêndio, primeiros socorros, evacuação, DEA, APH, trabalho e resgate em altura (NR-35) e espaços confinados (NR-33).'],
       ['Riscos específicos', 'Também constam treinamentos para cozinhas industriais, produtos químicos perigosos, equipamentos de proteção individual e combate a incêndio envolvendo baterias de íons de lítio.'],
-      ['Treinamento in company', 'Adaptamos o conteúdo à realidade da contratante e utilizamos exercícios práticos e a unidade móvel em parte das capacitações.'],
+      ['Treinamento no local', 'Adaptamos o conteúdo à realidade da contratante e utilizamos exercícios práticos e a unidade móvel em parte das capacitações.'],
     ], bullets: ['Brigada de incêndio e NR-23', 'Primeiros socorros, DEA e APH', 'Abandono e evacuação', 'NR-35, NR-33 e riscos específicos'],
     scopeNote: 'Para conhecer os conteúdos, recursos e formatos disponíveis para sua equipe, fale com nossa equipe.',
     source: 'https://www.avantebombeiros.com/treinamentos.html',
@@ -86,13 +86,13 @@ const services = [
 const coverageBySlug = {
   'brigada-de-incendio-nr23.html': [
     ['Treinamento e estrutura', [
-      'Treinamento in company adaptado à empresa, centro comercial, shopping, indústria ou condomínio.',
+      'Treinamento adaptado à realidade de empresas, centros comerciais, shopping centers, indústrias e condomínios.',
       'Unidade móvel configurada para simulações práticas de primeiros socorros e combate a incêndio.',
       'Exercícios de uso de extintores, mangueiras e equipamentos de resposta inicial.',
     ]],
     ['Atribuições da brigada', [
       'Inspecionar instalações, identificar riscos e conferir equipamentos de combate a incêndio.',
-      'Atuar em princípios de incêndio e coordenar a evacuação conforme o plano de emergência.',
+      'Detectar ocorrências, atuar em princípios de incêndio e coordenar a evacuação até a chegada do Corpo de Bombeiros, conforme o plano de emergência.',
       'Prestar primeiros socorros, incluindo RCP, controle de hemorragias e imobilização até a chegada do atendimento especializado.',
       'Orientar colaboradores e realizar simulações periódicas de emergência.',
     ]],
@@ -104,19 +104,19 @@ const coverageBySlug = {
   ],
   'plano-de-abandono.html': [
     ['PAE: resposta organizada', [
-      'O Plano de Atendimento a Emergências reúne cenários de risco, responsáveis, fluxos de acionamento, comunicação e recursos para cada local.',
-      'Organiza procedimentos para ocorrências como incêndio, emergência médica, vazamentos e resgates, além da integração com os serviços externos.',
-      'Simulados, registros pós-evento e revisão dos procedimentos apoiam a preparação e a melhoria contínua.',
+      'O Plano de Atendimento a Emergências identifica cenários de risco e reúne prioridades de proteção da vida e de áreas críticas, cadeia de comando, responsáveis, contatos e recursos para cada local.',
+      'Define critérios de mobilização da Avante e dos serviços externos, comunicação e procedimentos para incêndios, vazamentos, emergências médicas, resgates e evacuação.',
+      'Simulados, registros pós-evento, revisão dos procedimentos e integração com o plano de continuidade apoiam a preparação da operação.',
     ]],
     ['Plano de abandono: evacuação segura', [
-      'Define como funcionários, prestadores, visitantes e demais ocupantes deixam a área diante de risco iminente.',
+      'Define como funcionários, prestadores, visitantes e demais ocupantes deixam a área diante de incêndio, explosão, vazamento ou outro risco iminente.',
       'Organiza rotas, saídas, pontos de encontro, comunicação, contagem de pessoas e responsabilidades da brigada.',
       'Prioriza a preservação da vida, a orientação clara e a saída ordenada, com treinamento e simulados.',
     ]],
     ['Preparação e atualização', [
       'Os procedimentos consideram áreas internas, estacionamentos e demais dependências incluídas no escopo contratado.',
-      'Mapas de risco, organogramas, contatos, checklists e procedimentos operacionais podem integrar a entrega conforme a necessidade.',
-      'Treinamentos, simulados e revisões ajudam a manter o plano adequado às mudanças da operação.',
+      'O documento técnico pode reunir mapas de risco, organograma, contatos, checklists e procedimentos operacionais, conforme a necessidade.',
+      'Versões para murais e fichas de bolso podem complementar treinamento inicial, simulados, relatório de implantação e revisões periódicas.',
     ]],
   ],
   'auto-de-vistoria-avcb-clcb.html': [
@@ -143,7 +143,8 @@ const coverageBySlug = {
     ['Atuação operacional', [
       'Análise de riscos, inspeção de equipamentos, rotas, escadas, sinalização e iluminação de emergência.',
       'Gestão de planos de evacuação, prevenção e combate inicial a incêndios.',
-      'Primeiros socorros, apoio a resgates e resposta a ocorrências elétricas, hidráulicas ou com produtos químicos.',
+      'Primeiros socorros e APH inicial, com apoio a resgates, comunicação acolhedora e encaminhamento ao atendimento especializado.',
+      'Quando disponível e indicado, o DEA pode integrar a resposta à parada cardiorrespiratória junto à RCP e ao acionamento do serviço médico.',
       'Análise e testes de sistemas de detecção e alarme e apoio a viaturas de combate e resgate.',
     ]],
     ['Vantagens da terceirização', [
@@ -160,7 +161,8 @@ const coverageBySlug = {
   ],
   'eventos.html': [
     ['Equipe para o evento', [
-      'Bombeiros civis para primeiros socorros, prevenção, inspeções e resposta inicial a intercorrências.',
+      'Bombeiros civis para primeiros socorros, APH inicial, prevenção, inspeções e resposta inicial a intercorrências.',
+      'Recursos como o DEA podem integrar o posto de atendimento conforme o planejamento e o escopo contratado.',
       'Recepcionistas bilíngues e promotores para atendimento, ativação e relacionamento com o público.',
       'Segurança, limpeza e conservação, carregadores e apoio à montagem e desmontagem.',
     ]],
@@ -176,13 +178,13 @@ const coverageBySlug = {
   ],
   'treinamentos.html': [
     ['DEA e atendimento pré-hospitalar (APH)', [
-      'O DEA analisa o ritmo cardíaco e fornece instruções; quando indicado, orienta a aplicação de choque. Seu uso integra o atendimento à parada cardiorrespiratória junto à RCP e ao acionamento do serviço de emergência.',
-      'O APH reúne os cuidados iniciais no local para preservar a vida, reduzir riscos imediatos e preparar a transferência da vítima ao serviço de saúde, conforme treinamento e recursos disponíveis.',
-      'As capacitações podem abordar atendimentos individuais ou com múltiplas vítimas e a integração com equipes externas.',
+      'O DEA é um equipamento portátil que analisa o ritmo cardíaco e fornece instruções por voz; quando indicado, orienta a aplicação de choque. Seu uso se integra à RCP e ao acionamento do serviço de emergência.',
+      'O APH reúne cuidados iniciais no local para preservar a vida, reduzir riscos imediatos e preparar a transferência da vítima ao serviço de saúde, conforme treinamento e recursos disponíveis.',
+      'As capacitações podem abordar atendimentos individuais ou com múltiplas vítimas em empresas, indústrias, centros comerciais, eventos e obras, além da integração com equipes externas.',
     ]],
     ['Abordagem humanizada em resgates', [
       'A atuação prioriza a vida e a segurança, com avaliação dos riscos para a vítima e para quem presta ajuda.',
-      'Comunicação calma e clara, respeito à dignidade e à privacidade e consentimento sempre que possível orientam o atendimento inicial.',
+      'Comunicação calma e acolhedora, respeito à dignidade e à privacidade e consentimento sempre que possível ajudam a reduzir pânico e sofrimento.',
       'Os procedimentos seguem o treinamento recebido e consideram a transferência ao atendimento especializado.',
     ]],
     ['Resgate e riscos específicos', [
@@ -225,13 +227,13 @@ const articles = [
 
 const nav = `<a href="./index.html">Início</a><a href="./index.html#solucoes">Soluções</a><a href="./treinamentos.html">Treinamentos</a><a href="./blog.html">Blog</a><a href="./index.html#contato">Contato</a>`;
 const shell = (title, description, main, image = 'treinamento-enhanced.webp') => `<!doctype html>
-<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f3f3ef"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; connect-src 'none'"><title>${esc(title)} | Avante Bombeiros e Serviços</title><meta name="description" content="${esc(description)}"><meta property="og:type" content="website"><meta property="og:title" content="${esc(title)} | Avante Bombeiros e Serviços"><meta property="og:description" content="${esc(description)}"><meta property="og:image" content="./images/${image}"><link rel="icon" type="image/png" sizes="any" href="./images/favicon-avante-brasao-v1.png"><script src="./theme.js"></script><link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./inner.css"><link rel="stylesheet" href="./theme.css"><script src="./main.js" defer></script></head><body><a class="skip-link" href="#conteudo">Pular para o conteúdo</a><div class="scroll-progress" aria-hidden="true"></div><header class="site-header" id="topo"><div class="header-inner shell"><a class="brand" href="./index.html" aria-label="Avante Bombeiros e Serviços — início"><img src="./images/avante-logo-oficial-v1.png" alt="Avante Bombeiros e Serviços" width="1600" height="332"></a><nav class="desktop-nav" aria-label="Navegação principal">${nav}</nav><div class="header-actions"><a class="header-contact" href="./index.html#contato">Solicitar proposta <span aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a><button class="theme-toggle" type="button" aria-label="Ativar tema escuro" aria-pressed="false" title="Ativar tema escuro"><svg viewBox="0 0 24 24" aria-hidden="true"><circle class="theme-sun" cx="12" cy="12" r="4"></circle><path class="theme-sun" d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path><path class="theme-moon" d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.5 8.5 0 1 0 20.2 15.2Z"></path></svg></button><button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span></button></div></div></header><div class="menu-overlay" id="mobile-menu" aria-hidden="true"><nav class="menu-overlay-nav" aria-label="Menu móvel"><a href="./index.html">Início</a><a href="./index.html#solucoes">Soluções</a><a href="./treinamentos.html">Treinamentos</a><a href="./blog.html">Blog</a><a href="./index.html#contato">Contato</a></nav><div class="menu-overlay-bottom"><span>PREVENÇÃO • PRONTIDÃO • RESPOSTA</span><a href="tel:+551126850301">11 2685-0301</a></div></div><main id="conteudo">${main}</main><footer class="site-footer"><div class="shell footer-top"><img src="./images/avante-logo-footer-oficial-v1.png" alt="Avante Bombeiros e Serviços" width="1600" height="332" loading="lazy"><p>Segurança em ação.</p></div><div class="shell footer-grid"><div><span class="footer-label">NAVEGAÇÃO</span><a href="./index.html">Início</a><a href="./blog.html">Blog</a><a href="./index.html#contato">Contato</a></div><div><span class="footer-label">SERVIÇOS</span>${services.map(s => `<a href="./${s.slug}">${esc(s.title)}</a>`).join('')}</div><div><span class="footer-label">CONTATO</span><a href="tel:+551126850301">11 2685-0301</a><a href="mailto:contato@avantebombeiros.com">contato@avantebombeiros.com</a><a href="https://wa.me/5511991968530" target="_blank" rel="noopener noreferrer">WhatsApp <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div></div><div class="shell footer-bottom"><span>© <span id="year">2026</span> Avante Bombeiros e Serviços</span><a href="#topo">Voltar ao topo <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V5m0 0L6 11m6-6 6 6"/></svg></a></div></footer><a class="floating-contact" href="https://wa.me/5511991968530?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20as%20solu%C3%A7%C3%B5es%20da%20Avante." target="_blank" rel="noopener noreferrer" aria-label="Conversar com a Avante pelo WhatsApp">Fale com a Avante <span aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></body></html>`;
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f3f3ef"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; connect-src 'none'"><title>${esc(title)} | Avante Bombeiros e Serviços</title><meta name="description" content="${esc(description)}"><meta property="og:type" content="website"><meta property="og:title" content="${esc(title)} | Avante Bombeiros e Serviços"><meta property="og:description" content="${esc(description)}"><meta property="og:image" content="./images/${image}"><link rel="icon" type="image/png" sizes="any" href="./images/favicon-avante-brasao-v1.png"><script src="./theme.js"></script><link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./inner.css"><link rel="stylesheet" href="./theme.css"><script src="./main.js" defer></script></head><body><div id="topo" aria-hidden="true"></div><a class="skip-link" href="#conteudo">Pular para o conteúdo</a><div class="scroll-progress" aria-hidden="true"></div><header class="site-header"><div class="header-inner shell"><a class="brand" href="./index.html" aria-label="Avante Bombeiros e Serviços — início"><img src="./images/avante-logo-oficial-v1.png" alt="Avante Bombeiros e Serviços" width="1600" height="332"></a><nav class="desktop-nav" aria-label="Navegação principal">${nav}</nav><div class="header-actions"><a class="header-contact" href="./index.html#contato">Solicitar proposta <span aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a><button class="theme-toggle" type="button" aria-label="Ativar tema escuro" aria-pressed="false" title="Ativar tema escuro"><svg viewBox="0 0 24 24" aria-hidden="true"><circle class="theme-sun" cx="12" cy="12" r="4"></circle><path class="theme-sun" d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path><path class="theme-moon" d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.5 8.5 0 1 0 20.2 15.2Z"></path></svg></button><button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span></button></div></div></header><div class="menu-overlay" id="mobile-menu" aria-hidden="true"><nav class="menu-overlay-nav" aria-label="Menu móvel"><a href="./index.html">Início</a><a href="./index.html#solucoes">Soluções</a><a href="./treinamentos.html">Treinamentos</a><a href="./blog.html">Blog</a><a href="./index.html#contato">Contato</a></nav><div class="menu-overlay-bottom"><span>PREVENÇÃO • PRONTIDÃO • RESPOSTA</span><a href="tel:+551126850301">11 2685-0301</a></div></div><main id="conteudo">${main}</main><footer class="site-footer"><div class="shell footer-top"><img src="./images/avante-logo-footer-oficial-v1.png" alt="Avante Bombeiros e Serviços" width="1600" height="332" loading="lazy"><p>Segurança em ação.</p></div><div class="shell footer-grid"><div><span class="footer-label">NAVEGAÇÃO</span><a href="./index.html">Início</a><a href="./blog.html">Blog</a><a href="./index.html#contato">Contato</a></div><div><span class="footer-label">SERVIÇOS</span>${services.map(s => `<a href="./${s.slug}">${esc(s.title)}</a>`).join('')}</div><div><span class="footer-label">CONTATO</span><a href="tel:+551126850301">11 2685-0301</a><a href="mailto:contato@avantebombeiros.com">contato@avantebombeiros.com</a><a href="https://wa.me/5511991968530" target="_blank" rel="noopener noreferrer">WhatsApp <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div></div><div class="shell footer-bottom"><span>© <span id="year">2026</span> Avante Bombeiros e Serviços</span><a href="#topo">Voltar ao topo <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V5m0 0L6 11m6-6 6 6"/></svg></a></div></footer><a class="floating-contact" href="https://wa.me/5511991968530?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20as%20solu%C3%A7%C3%B5es%20da%20Avante." target="_blank" rel="noopener noreferrer" aria-label="Conversar com a Avante pelo WhatsApp">Fale com a Avante <span aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></body></html>`;
 
 for (const service of services) {
   const related = services.filter(item => item !== service).slice(0, 3);
   const coverage = coverageBySlug[service.slug] || [];
   const coverageSection = `<section class="inner-coverage section-pad"><div class="shell"><div class="inner-detail-head"><h2>Atividades do portfólio.</h2></div><div class="inner-coverage-grid inner-coverage-grid--count-${coverage.length}">${coverage.map(([title, items]) => `<article><h3>${esc(title)}</h3><ul>${items.map(item => `<li>${esc(item)}</li>`).join('')}</ul></article>`).join('')}</div></div></section>`;
-  const main = `<section class="inner-hero"><img class="inner-hero-image" src="./images/${service.image}" alt="" aria-hidden="true"><div class="inner-hero-overlay" aria-hidden="true"></div><div class="shell inner-hero-content"><p class="inner-breadcrumb"><a href="./index.html">Início</a> / Soluções</p><p class="inner-kicker">${esc(service.eyebrow)}</p><h1>${esc(service.title)}</h1><p>${esc(service.lead)}</p><a class="button button-red" href="./index.html?servico=${encodeURIComponent(service.intent)}#contato">Solicitar proposta <span class="button-icon" aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></div></section><section class="inner-intro section-pad"><div class="shell inner-intro-grid"><div><span class="micro-label">AVANTE BOMBEIROS E SERVIÇOS</span><h2>Prevenção com propósito.<br><em>Prontidão em cada etapa.</em></h2></div><p>${esc(service.lead)}</p></div></section><section class="inner-detail section-pad"><div class="shell"><div class="inner-detail-head"><span class="micro-label">COMO ATUAMOS</span><h2>Uma solução para a realidade da sua operação.</h2></div><div class="inner-detail-grid">${service.sections.map((s, i) => `<article><span>0${i + 1}</span><h3>${esc(s[0])}</h3><p>${esc(s[1])}</p></article>`).join('')}</div></div></section>${coverageSection}<section class="inner-check section-pad"><div class="shell inner-check-grid"><div><span class="micro-label">ESCOPO</span><h2>O que podemos preparar juntos.</h2><p>${esc(service.scopeNote || 'Para conhecer os detalhes e o escopo adequado à sua operação, entre em contato com nossa equipe.')}</p></div><ul>${service.bullets.map(b => `<li>${esc(b)}</li>`).join('')}</ul></div></section><section class="inner-related section-pad"><div class="shell"><span class="micro-label">EXPLORE MAIS</span><h2>Outras soluções Avante</h2><div class="inner-related-grid">${related.map(s => `<a href="./${s.slug}"><span>${esc(s.eyebrow)}</span><strong>${esc(s.title)}</strong><b aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></b></a>`).join('')}</div></div></section><section class="inner-cta"><div class="shell"><span class="micro-label">PRÓXIMO PASSO</span><h2>Vamos planejar a segurança do seu espaço?</h2><a class="button button-white" href="./index.html?servico=${encodeURIComponent(service.intent)}#contato">Falar com a Avante <span class="button-icon" aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></div></section>`;
+  const main = `<section class="inner-hero"><img class="inner-hero-image" src="./images/${service.image}" alt="" aria-hidden="true"><div class="inner-hero-overlay" aria-hidden="true"></div><div class="shell inner-hero-content"><p class="inner-breadcrumb"><a href="./index.html">Início</a> / Soluções</p><p class="inner-kicker">${esc(service.eyebrow)}</p><h1>${esc(service.title)}</h1><p>${esc(service.lead)}</p><a class="button button-red" href="./index.html?servico=${encodeURIComponent(service.intent)}#contato">Solicitar proposta <span class="button-icon" aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></div></section><section class="inner-intro section-pad"><div class="shell inner-intro-grid"><div><span class="micro-label">AVANTE BOMBEIROS E SERVIÇOS</span><h2>Prevenção com propósito.<br><em>Prontidão em cada etapa.</em></h2></div><p>${esc(service.lead)}</p></div></section><section class="inner-detail section-pad"><div class="shell"><div class="inner-detail-head"><h2>Como a Avante atua.</h2></div><div class="inner-detail-grid">${service.sections.map((s, i) => `<article><span>0${i + 1}</span><h3>${esc(s[0])}</h3><p>${esc(s[1])}</p></article>`).join('')}</div></div></section>${coverageSection}<section class="inner-check section-pad"><div class="shell inner-check-grid"><div><span class="micro-label">ESCOPO</span><h2>O que podemos preparar juntos.</h2><p>${esc(service.scopeNote || 'Para conhecer os detalhes e o escopo adequado à sua operação, entre em contato com nossa equipe.')}</p></div><ul>${service.bullets.map(b => `<li>${esc(b)}</li>`).join('')}</ul></div></section><section class="inner-related section-pad"><div class="shell"><span class="micro-label">EXPLORE MAIS</span><h2>Outras soluções Avante</h2><div class="inner-related-grid">${related.map(s => `<a href="./${s.slug}"><span>${esc(s.eyebrow)}</span><strong>${esc(s.title)}</strong><b aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></b></a>`).join('')}</div></div></section><section class="inner-cta"><div class="shell"><span class="micro-label">PRÓXIMO PASSO</span><h2>Vamos planejar a segurança do seu espaço?</h2><a class="button button-white" href="./index.html?servico=${encodeURIComponent(service.intent)}#contato">Falar com a Avante <span class="button-icon" aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></div></section>`;
   const html = shell(service.title, service.lead, main, service.image);
   for (const slug of [service.slug, ...(service.aliases || [])]) await writeFile(join(root, slug), html);
 }

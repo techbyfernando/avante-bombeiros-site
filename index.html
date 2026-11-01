@@ -23,10 +23,11 @@
     <script src="./main.js" defer></script>
   </head>
   <body>
+    <div id="topo" aria-hidden="true"></div>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <div class="scroll-progress" aria-hidden="true"></div>
 
-    <header class="site-header" id="topo">
+    <header class="site-header">
       <div class="header-inner shell">
         <a class="brand" href="#topo" aria-label="Avante Bombeiros e Serviços — início">
           <img src="./images/avante-logo-oficial-v1.png" alt="Avante Bombeiros e Serviços" width="1600" height="332" />
@@ -147,7 +148,7 @@
             <a href="./bombeiro-civil-terceirizacao.html"><span>Bombeiro civil</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></a>
             <a href="./eventos.html"><span>Eventos</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></a>
             <a href="./brigada-de-incendio-nr23.html"><span>Brigada de incêndio / NR-23</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></a>
-            <a href="./plano-de-abandono.html"><span>Plano de abandono</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></a>
+            <a href="./plano-de-abandono.html"><span>PAE e plano de abandono</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></a>
             <a href="./auto-de-vistoria-avcb-clcb.html"><span>AVCB / CLCB</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></a>
             <a href="./treinamentos.html"><span>Treinamentos</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></a>
             <a href="./orientacao-socioeducativa.html"><span>Orientação socioeducativa</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></a>
@@ -238,7 +239,7 @@
             <form class="contact-form" id="contact-form" data-reveal>
               <div class="form-row"><label for="nome">Seu nome <span>*</span></label><input id="nome" name="nome" type="text" autocomplete="name" required placeholder="Como podemos chamar você?" maxlength="100" /></div>
               <div class="form-row"><label for="empresa">Empresa ou instituição</label><input id="empresa" name="empresa" type="text" autocomplete="organization" placeholder="Nome da organização" maxlength="120" /></div>
-              <div class="form-row"><label for="servico">O que você procura? <span>*</span></label><select id="servico" name="servico" required><option value="" disabled selected>Selecione uma solução</option><option>Bombeiro civil terceirizado</option><option>Cobertura para eventos</option><option>Brigada de incêndio / NR-23</option><option>Plano de abandono e evacuação</option><option>Treinamentos e capacitações</option><option>AVCB/CLCB e prevenção</option><option>Orientação socioeducativa</option><option>Outra necessidade</option></select></div>
+              <div class="form-row"><label for="servico">O que você procura? <span>*</span></label><select id="servico" name="servico" required><option value="" disabled selected>Selecione uma solução</option><option>Bombeiro civil terceirizado</option><option>Cobertura para eventos</option><option>Brigada de incêndio / NR-23</option><option>PAE e plano de abandono</option><option>Treinamentos e capacitações</option><option>AVCB/CLCB e prevenção</option><option>Orientação socioeducativa</option><option>Outra necessidade</option></select></div>
               <div class="form-row"><label for="mensagem">Conte um pouco sobre a necessidade</label><textarea id="mensagem" name="mensagem" rows="3" placeholder="Local, tipo de operação e prazo, se souber" maxlength="500"></textarea></div>
               <button class="button button-red form-submit" type="submit">Abrir conversa no WhatsApp <span class="button-icon" aria-hidden="true"><svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></button>
               <p class="form-note">Os dados preenchidos serão incluídos na mensagem aberta no WhatsApp. Nenhuma informação é salva nesta página.</p>
