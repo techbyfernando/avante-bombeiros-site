@@ -13,7 +13,7 @@ themeButton?.addEventListener('click', () => {
   const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
   document.documentElement.dataset.theme = next;
   try { localStorage.setItem('avante-theme', next); } catch {}
-  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', next === 'dark' ? '#101719' : '#f3f3ef');
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', next === 'dark' ? '#1e2c3f' : '#ffffff');
   syncThemeButton();
 });
 

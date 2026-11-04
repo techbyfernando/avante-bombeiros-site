@@ -43,26 +43,38 @@ body{background:var(--page);color:var(--text)}
 :root{--ink:#0f0f0f;--ink-2:#1e2c3f;--paper:#ffffff;--red:#e51e2e;--red-bright:#e51e2e;--page:#ffffff;--surface:#ffffff;--text:#0f0f0f}
 :root[data-theme="dark"]{--page:#1e2c3f;--surface:#172437;--surface-alt:#273a50;--text:#ffffff;--text-soft:#d8e0e7;--border:#637287;--line:#637287;--line-dark:#637287}
 .site-header,.site-header.is-scrolled{background:#ffffff;color:#1e2c3f;border-bottom-color:#d5d9d8}
+:root[data-theme="dark"] .site-header,:root[data-theme="dark"] .site-header.is-scrolled{background:#1e2c3f;color:#ffffff;border-bottom-color:rgba(255,255,255,.18)}
 .desktop-nav a:hover,.desktop-nav a:focus-visible{color:#1e2c3f;text-decoration:underline;text-decoration-color:#e51e2e;text-underline-offset:6px}
+:root[data-theme="dark"] .desktop-nav a:hover,:root[data-theme="dark"] .desktop-nav a:focus-visible{color:#ffffff}
 .header-contact,:root[data-theme="dark"] .header-contact{background:#e51e2e;color:#ffffff}
 .header-contact:hover{background:#0f0f0f}
 .theme-toggle,.menu-toggle{color:#1e2c3f;border-color:rgba(30,44,63,.45)}
 .theme-toggle:hover{border-color:#1e2c3f;background:rgba(30,44,63,.08)}
 .menu-toggle span{background:#1e2c3f}
+:root[data-theme="dark"] .theme-toggle,:root[data-theme="dark"] .menu-toggle{color:#ffffff;border-color:rgba(255,255,255,.55)}
+:root[data-theme="dark"] .theme-toggle:hover{border-color:#ffffff;background:rgba(255,255,255,.12)}
+:root[data-theme="dark"] .menu-toggle span{background:#ffffff}
 .menu-overlay{background:#1e2c3f}
 .site-footer{background:#ffffff;color:#1e2c3f}
 .footer-top,.footer-bottom{border-color:#d5d9d8}
 .footer-label,.footer-bottom{color:#596367}
 .footer-bottom a{color:#1e2c3f}
+:root[data-theme="dark"] .site-footer{background:#0f0f0f;color:#ffffff}
+:root[data-theme="dark"] .footer-top,:root[data-theme="dark"] .footer-bottom{border-color:#394247}
+:root[data-theme="dark"] .footer-label,:root[data-theme="dark"] .footer-bottom{color:#aeb9be}
+:root[data-theme="dark"] .footer-bottom a{color:#ffffff}
 .services,.contact,.inner-related,.inner-cta{background:#1e2c3f}
 .inner-kicker,.services .micro-label,.contact .micro-label,.inner-related .micro-label,.inner-cta .micro-label,.menu-overlay-nav span{color:#ffffff}
 :root[data-theme="dark"] .micro-label,:root[data-theme="dark"] .pillar-num,:root[data-theme="dark"] .training-list span,:root[data-theme="dark"] .inner-kicker,:root[data-theme="dark"] .menu-overlay-nav span{color:#ffffff}
 :root[data-theme="dark"] .inner-detail-grid article>span{color:#ffffff}
 :root[data-theme="dark"] .blog-article a:not(.text-link){color:#ffffff}
 
-/* A arte original permanece transparente e completa sobre superfícies claras. */
+/* As duas versões oficiais mantêm contraste sem fundo aplicado à imagem. */
 :root{--radius-card:12px}
 .brand img,.footer-top img{height:auto;max-width:100%;object-fit:contain;background:transparent;border-radius:0}
+.brand-logo--dark{display:none}
+:root[data-theme="dark"] .brand-logo--light{display:none}
+:root[data-theme="dark"] .brand-logo--dark{display:block}
 .brand img{width:260px}
 .footer-top img{width:290px}
 .training-photo,.field-image,.service-panel>img,.blog-card,.inner-related-grid a{border-radius:var(--radius-card)}

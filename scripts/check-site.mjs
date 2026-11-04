@@ -11,8 +11,7 @@ for (const file of files) {
   const html = await readFile(join(root, file), 'utf8');
   const forbidden = new RegExp(['socio' + 'educativ', 'Conselho ' + 'Tutelar', 'Cidade ' + 'Protetora', 'SM' + 'ADS', 'CR' + 'EAS'].join('|'), 'i');
   if (forbidden.test(html)) throw new Error(`Referência ao serviço removido em ${file}`);
-  const logo = './images/avante-logo-colorida-manual-v4.png';
-  if ([...html.matchAll(/avante-logo-colorida-manual-v4\.png/g)].length !== 2 || !html.includes(`<img src="${logo}"`)) throw new Error(`Logo colorida ausente ou duplicada em ${file}`);
+  if ([...html.matchAll(/class="brand-logo--light" src="\.\/images\/avante-logo-colorida-manual-v4\.png"/g)].length !== 2 || [...html.matchAll(/class="brand-logo--dark" src="\.\/images\/avante-logo-negativa-manual-v1\.png"/g)].length !== 2) throw new Error(`Versões oficiais da logo ausentes ou duplicadas em ${file}`);
   if (/href=["']https?:\/\/(?:www\.)?avantebombeiros\.com\//i.test(html)) throw new Error(`Link ao site antigo em ${file}`);
   for (const [, attr, ref] of html.matchAll(/\b(href|src)=["'](\.\/[^"']+)["']/g)) {
     const path = ref.split(/[?#]/)[0];
