@@ -1,12 +1,11 @@
-:root{color-scheme:light;--page:#f3f3ef;--surface:#fff;--surface-alt:#e8ebe8;--text:#161b1e;--text-soft:#596367;--border:#d5d9d8}
+:root{color-scheme:light;--page:#ffffff;--surface:#fff;--surface-alt:#e8ebe8;--text:#0f0f0f;--text-soft:#596367;--border:#d5d9d8}
 :root[data-theme="dark"]{color-scheme:dark;--page:#101719;--surface:#171f22;--surface-alt:#202a2d;--text:#f4f7f6;--text-soft:#bdc8c7;--border:#394648;--line:#394648;--line-dark:#394648}
 body{background:var(--page);color:var(--text)}
 .site-header,.site-header.is-scrolled{background:color-mix(in srgb,var(--page) 96%,transparent);color:var(--text);border-bottom-color:color-mix(in srgb,var(--text) 10%,transparent)}
 .site-header.is-scrolled{box-shadow:0 8px 30px rgba(0,0,0,.12)}
-:root[data-theme="dark"] .brand img{content:url('./images/avante-logo-dark-oficial-v1.png')}
-:root[data-theme="dark"] .header-contact{background:#c9151d}
-:root[data-theme="dark"] .button-red,:root[data-theme="dark"] .floating-contact{background:#c9151d}
-:root[data-theme="dark"] .micro-label,:root[data-theme="dark"] .pillar-num,:root[data-theme="dark"] .training-list span,:root[data-theme="dark"] .inner-detail-grid article>span,:root[data-theme="dark"] .inner-kicker,:root[data-theme="dark"] .menu-overlay-nav span,:root[data-theme="dark"] .blog-article a:not(.text-link){color:#ff777a}
+:root[data-theme="dark"] .header-contact{background:#e51e2e}
+:root[data-theme="dark"] .button-red,:root[data-theme="dark"] .floating-contact{background:#e51e2e}
+:root[data-theme="dark"] .micro-label,:root[data-theme="dark"] .pillar-num,:root[data-theme="dark"] .training-list span,:root[data-theme="dark"] .inner-detail-grid article>span,:root[data-theme="dark"] .inner-kicker,:root[data-theme="dark"] .menu-overlay-nav span,:root[data-theme="dark"] .blog-article a:not(.text-link){color:#ffffff}
 :root[data-theme="dark"] .form-row select option{background:#171f22;color:#f4f7f6}
 .theme-toggle{width:44px;height:44px;flex:none;display:grid;place-items:center;border:1px solid color-mix(in srgb,var(--text) 35%,transparent);border-radius:50%;background:transparent;color:var(--text);transition:background .2s,border-color .2s,transform .2s}
 .theme-toggle:hover{background:color-mix(in srgb,var(--red-bright) 12%,transparent);border-color:var(--red-bright);transform:rotate(-8deg)}
@@ -39,3 +38,23 @@ body{background:var(--page);color:var(--text)}
 .testimonial-inner>p{font-size:16px;line-height:1.55}
 .testimonial-inner>p span{font-size:14px}
 .site-header,.site-header.is-scrolled{background:var(--page)}
+
+/* Aplicação digital das cores primárias do manual da marca. */
+:root{--ink:#0f0f0f;--ink-2:#1e2c3f;--paper:#ffffff;--red:#e51e2e;--red-bright:#e51e2e;--page:#ffffff;--surface:#ffffff;--text:#0f0f0f}
+:root[data-theme="dark"]{--page:#1e2c3f;--surface:#172437;--surface-alt:#273a50;--text:#ffffff;--text-soft:#d8e0e7;--border:#637287;--line:#637287;--line-dark:#637287}
+.site-header,.site-header.is-scrolled{background:#1e2c3f;color:#ffffff;border-bottom-color:rgba(255,255,255,.18)}
+.brand img{width:240px}
+.desktop-nav a:hover,.desktop-nav a:focus-visible{color:#ffffff;text-decoration:underline;text-decoration-color:#e51e2e;text-underline-offset:6px}
+.header-contact,:root[data-theme="dark"] .header-contact{background:#e51e2e;color:#ffffff}
+.header-contact:hover{background:#0f0f0f}
+.theme-toggle,.menu-toggle{color:#ffffff;border-color:rgba(255,255,255,.55)}
+.theme-toggle:hover{border-color:#ffffff;background:rgba(255,255,255,.12)}
+.menu-toggle span{background:#ffffff}
+.menu-overlay{background:#1e2c3f}
+.site-footer{background:#0f0f0f}
+.services,.contact,.inner-related,.inner-cta{background:#1e2c3f}
+.inner-kicker,.services .micro-label,.contact .micro-label,.inner-related .micro-label,.inner-cta .micro-label,.menu-overlay-nav span{color:#ffffff}
+:root[data-theme="dark"] .micro-label,:root[data-theme="dark"] .pillar-num,:root[data-theme="dark"] .training-list span,:root[data-theme="dark"] .inner-kicker,:root[data-theme="dark"] .menu-overlay-nav span{color:#ffffff}
+:root[data-theme="dark"] .inner-detail-grid article>span{color:#ffffff}
+:root[data-theme="dark"] .blog-article a:not(.text-link){color:#ffffff}
+@media(max-width:800px){.brand img{width:210px}}

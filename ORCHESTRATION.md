@@ -37,7 +37,7 @@ Atualizado em 20/10/2026. Este é o handoff da equipe para a expansão do site l
 
 1. **Fonte** — registrar procedência de cada afirmação, foto, vídeo e parceiro. Conteúdo antigo não deve ser copiado cegamente nem redirecionar para o domínio antigo.
 2. **Mídia** — arquivo MP4 local sem faixa de áudio, loop/mute/inline/autoplay, primeira dobra legível enquanto carrega, fallback em falha, favicon PNG transparente em tamanhos adequados.
-3. **Rotas** — `brigada-de-incendio-nr23.html`, `plano-de-abandono.html`, `auto-de-vistoria-avcb-clcb.html`, `bombeiro-civil-terceirizacao.html`, `eventos.html`, `treinamentos.html`, `orientacao-socioeducativa.html` e blog locais, todos navegáveis.
+3. **Rotas** — `brigada-de-incendio-nr23.html`, `plano-de-abandono.html`, `auto-de-vistoria-avcb-clcb.html`, `bombeiro-civil-terceirizacao.html`, `eventos.html`, `treinamentos.html`, `inspecao-e-ensaio-de-sprinklers.html` e blog locais, todos navegáveis.
 4. **Interação** — carrossel automático com todos os logos verificados, sem corte abrupto, controls acessíveis ou pausa em foco/hover, redução de movimento.
 5. **Qualidade** — desktop e mobile testados, sem links quebrados ou erros de console, sem layout overflow, contraste e foco visível; vídeo e animações não comprometem a navegação.
 

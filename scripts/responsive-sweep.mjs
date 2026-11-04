@@ -30,7 +30,7 @@ const homeViewports = [
 const routes = [
   'brigada-de-incendio-nr23.html', 'plano-de-abandono.html', 'auto-de-vistoria-avcb-clcb.html',
   'bombeiro-civil-terceirizacao.html', 'eventos.html', 'treinamentos.html',
-  'orientacao-socioeducativa.html', 'blog.html',
+  'inspecao-e-ensaio-de-sprinklers.html', 'blog.html',
 ];
 const defects = [];
 const report = { homepage: [], routes: [] };

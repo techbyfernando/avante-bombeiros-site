@@ -31,7 +31,7 @@ const viewports = [
 const routes = [
   'brigada-de-incendio-nr23.html', 'plano-de-abandono.html', 'auto-de-vistoria-avcb-clcb.html',
   'bombeiro-civil-terceirizacao.html', 'eventos.html', 'treinamentos.html',
-  'orientacao-socioeducativa.html', 'blog.html',
+  'inspecao-e-ensaio-de-sprinklers.html', 'blog.html',
 ];
 const report = { homepage: [], routes: [] };
 
@@ -137,7 +137,7 @@ const defects = [
     ...(item.overflow > 1 ? [`${item.route}/${item.viewport}: overflow ${item.overflow}`] : []),
     ...(!item.h1Visible ? [`${item.route}/${item.viewport}: título invisível`] : []),
     ...(item.brokenImages ? [`${item.route}/${item.viewport}: ${item.brokenImages} imagens quebradas`] : []),
-    ...(item.route !== 'blog.html' && item.coverageGroups !== 3 ? [`${item.route}/${item.viewport}: cobertura editorial incompleta`] : []),
+    ...(item.route !== 'blog.html' && item.coverageGroups < 3 ? [`${item.route}/${item.viewport}: cobertura editorial incompleta`] : []),
   ]),
 ];
 console.log(JSON.stringify(report, null, 2));

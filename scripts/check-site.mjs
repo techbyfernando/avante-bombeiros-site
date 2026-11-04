@@ -3,11 +3,15 @@ import { join, resolve, dirname } from 'node:path';
 
 const root = resolve(import.meta.dirname, '..');
 const files = (await readdir(root)).filter(name => name.endsWith('.html'));
-const expected = ['index.html', 'brigada-de-incendio-nr23.html', 'plano-de-abandono.html', 'auto-de-vistoria-avcb-clcb.html', 'bombeiro-civil-terceirizacao.html', 'eventos.html', 'treinamentos.html', 'orientacao-socioeducativa.html', 'blog.html'];
+const expected = ['index.html', 'brigada-de-incendio-nr23.html', 'plano-de-abandono.html', 'auto-de-vistoria-avcb-clcb.html', 'bombeiro-civil-terceirizacao.html', 'eventos.html', 'treinamentos.html', 'inspecao-e-ensaio-de-sprinklers.html', 'blog.html'];
 for (const slug of expected) if (!files.includes(slug)) throw new Error(`Rota ausente: ${slug}`);
+if (files.some(file => file.includes('orientacao-' + 'socio' + 'educativa'))) throw new Error('Rota de serviço removido ainda presente');
 let links = 0;
 for (const file of files) {
   const html = await readFile(join(root, file), 'utf8');
+  const forbidden = new RegExp(['socio' + 'educativ', 'Conselho ' + 'Tutelar', 'Cidade ' + 'Protetora', 'SM' + 'ADS', 'CR' + 'EAS'].join('|'), 'i');
+  if (forbidden.test(html)) throw new Error(`Referência ao serviço removido em ${file}`);
+  if (!/<a class="brand"[\s\S]*?<img src="\.\/images\/avante-logo-branco-manual-v2\.png"/.test(html)) throw new Error(`Logo oficial ausente no cabeçalho de ${file}`);
   if (/href=["']https?:\/\/(?:www\.)?avantebombeiros\.com\//i.test(html)) throw new Error(`Link ao site antigo em ${file}`);
   for (const [, attr, ref] of html.matchAll(/\b(href|src)=["'](\.\/[^"']+)["']/g)) {
     const path = ref.split(/[?#]/)[0];
@@ -35,7 +39,7 @@ const coverageTerms = {
   'bombeiro-civil-terceirizacao.html': ['Atuação operacional', 'Soluções complementares', 'controle de fumaça'],
   'eventos.html': ['Recepcionistas bilíngues', 'limpeza e conservação', 'rh@avantebombeiros.com'],
   'treinamentos.html': ['NR-35', 'NR-33', 'baterias de íons de lítio'],
-  'orientacao-socioeducativa.html': ['Conselho Tutelar', 'Cidade Protetora', '61.426/2022'],
+  'inspecao-e-ensaio-de-sprinklers.html': ['dreno de fim de linha', 'vazão e pressão', 'periodicidade final requer validação técnica'],
 };
 for (const [file, terms] of Object.entries(coverageTerms)) {
   const html = await readFile(join(root, file), 'utf8');
