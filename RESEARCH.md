@@ -21,7 +21,7 @@
 
 | Arquivo local | Origem |
 | --- | --- |
-| `images/avante-logo-colorida-manual-v3.png` | Primeira prancheta do arquivo `Logos - AVANTE _ Bombeiros Especializados.ai` enviado pelo cliente. Usada no cabeçalho e no rodapé de todas as páginas. |
+| `images/avante-logo-colorida-manual-v4.png` | Primeira prancheta completa do arquivo `Logos - AVANTE _ Bombeiros Especializados.ai` enviado pelo cliente, exportada com canal alfa e proporções originais. Usada no cabeçalho e no rodapé de todas as páginas. |
 | `images/treinamento.jpg` | `https://www.avantebombeiros.com/content/images/d81e69b639a6e1a7eff2411e361377d5.jpg` |
 | `images/equipe-fixa.jpg` | `https://www.avantebombeiros.com/content/images/72ba503a4a96947f32dd2f19019a7f51.jpg` |
 | `images/eventos-hero.jpg` | `https://www.avantebombeiros.com/content/images/e41f0f78f26b49cfb726034b06f42c6c.jpg` |

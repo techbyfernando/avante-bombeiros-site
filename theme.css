@@ -42,27 +42,30 @@ body{background:var(--page);color:var(--text)}
 /* Aplicação digital das cores primárias do manual da marca. */
 :root{--ink:#0f0f0f;--ink-2:#1e2c3f;--paper:#ffffff;--red:#e51e2e;--red-bright:#e51e2e;--page:#ffffff;--surface:#ffffff;--text:#0f0f0f}
 :root[data-theme="dark"]{--page:#1e2c3f;--surface:#172437;--surface-alt:#273a50;--text:#ffffff;--text-soft:#d8e0e7;--border:#637287;--line:#637287;--line-dark:#637287}
-.site-header,.site-header.is-scrolled{background:#1e2c3f;color:#ffffff;border-bottom-color:rgba(255,255,255,.18)}
-.desktop-nav a:hover,.desktop-nav a:focus-visible{color:#ffffff;text-decoration:underline;text-decoration-color:#e51e2e;text-underline-offset:6px}
+.site-header,.site-header.is-scrolled{background:#ffffff;color:#1e2c3f;border-bottom-color:#d5d9d8}
+.desktop-nav a:hover,.desktop-nav a:focus-visible{color:#1e2c3f;text-decoration:underline;text-decoration-color:#e51e2e;text-underline-offset:6px}
 .header-contact,:root[data-theme="dark"] .header-contact{background:#e51e2e;color:#ffffff}
 .header-contact:hover{background:#0f0f0f}
-.theme-toggle,.menu-toggle{color:#ffffff;border-color:rgba(255,255,255,.55)}
-.theme-toggle:hover{border-color:#ffffff;background:rgba(255,255,255,.12)}
-.menu-toggle span{background:#ffffff}
+.theme-toggle,.menu-toggle{color:#1e2c3f;border-color:rgba(30,44,63,.45)}
+.theme-toggle:hover{border-color:#1e2c3f;background:rgba(30,44,63,.08)}
+.menu-toggle span{background:#1e2c3f}
 .menu-overlay{background:#1e2c3f}
-.site-footer{background:#0f0f0f}
+.site-footer{background:#ffffff;color:#1e2c3f}
+.footer-top,.footer-bottom{border-color:#d5d9d8}
+.footer-label,.footer-bottom{color:#596367}
+.footer-bottom a{color:#1e2c3f}
 .services,.contact,.inner-related,.inner-cta{background:#1e2c3f}
 .inner-kicker,.services .micro-label,.contact .micro-label,.inner-related .micro-label,.inner-cta .micro-label,.menu-overlay-nav span{color:#ffffff}
 :root[data-theme="dark"] .micro-label,:root[data-theme="dark"] .pillar-num,:root[data-theme="dark"] .training-list span,:root[data-theme="dark"] .inner-kicker,:root[data-theme="dark"] .menu-overlay-nav span{color:#ffffff}
 :root[data-theme="dark"] .inner-detail-grid article>span{color:#ffffff}
 :root[data-theme="dark"] .blog-article a:not(.text-link){color:#ffffff}
 
-/* Uma única arte colorida em bases claras preserva o contraste nos dois temas. */
-:root{--radius-card:12px;--radius-brand:8px}
-.brand img,.footer-top img{height:auto;object-fit:contain;background:#ffffff;border-radius:var(--radius-brand)}
-.brand img{width:248px;padding:8px 11px}
-.footer-top img{width:270px;padding:9px 12px}
+/* A arte original permanece transparente e completa sobre superfícies claras. */
+:root{--radius-card:12px}
+.brand img,.footer-top img{height:auto;max-width:100%;object-fit:contain;background:transparent;border-radius:0}
+.brand img{width:260px}
+.footer-top img{width:290px}
 .training-photo,.field-image,.service-panel>img,.blog-card,.inner-related-grid a{border-radius:var(--radius-card)}
 .photo-label{background:var(--surface);color:var(--text)}
-@media(max-width:800px){.header-inner{gap:clamp(8px,3vw,22px)}.brand img{width:202px;padding:7px 9px}.footer-top img{width:240px}}
-@media(max-width:360px){.header-inner{gap:8px}.brand img{width:180px;padding:6px 8px}.header-actions{gap:7px}.theme-toggle,.menu-toggle{width:40px;height:40px}}
+@media(max-width:800px){.header-inner{gap:clamp(8px,3vw,22px)}.brand img{width:202px}.footer-top img{width:240px}}
+@media(max-width:360px){.header-inner{gap:8px}.brand img{width:180px}.header-actions{gap:7px}.theme-toggle,.menu-toggle{width:40px;height:40px}}
